@@ -1,0 +1,241 @@
+
+html, body{ height: 100%;
+                width: 100%;
+                   padding: 0;
+                      margin: 0;
+                          background-color: grey;}
+/*<!--
+html {
+  display: table;
+        width: 100%;
+}
+
+body {
+  display: table-cell;
+     text-align: center;
+         vertical-align: middle;
+           margin: 50px 0;
+             padding: 0;
+}
+-->**/
+#wrapper{
+   width: 800px;
+      height: 1125px;
+         background-color: #331100; /**#4d3300;*/
+             background: -webkit-linear-gradient(left, bottom, white,#996600);
+
+
+
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+   width: 800px;
+      height: 80px;
+        background-color: #99ccff;
+
+}
+
+#header h1{
+     text-align: left;
+         color: silver;
+}
+
+
+
+#description {
+  text-align: right;
+    color: red;
+    position: relative;
+
+}
+#description p{
+   text-align: right;
+      margin-right: 10px;
+        position: static;
+          font-size: 20px;
+
+
+
+}
+/*this part is where the basic maing part begin*/
+
+#container {
+  width: 800px;
+    height: 940px;
+      background-color: #331100;
+}
+
+.portFolio{
+    width: 790px;
+      height: 340px;
+         border: 5px solid blue;
+
+}
+.folioRight{
+
+    width: 350px;
+       height: 300px;
+         border: 5px solid grey;
+           float: left;
+             margin-left: 20px;
+               margin-top: 15px;
+}
+
+.folioLeft {
+      width: 350px;
+        height:  300px;
+          background-color: #A6B2FF;
+          border: 5px solid grey;
+             float: right;
+               margin-right: 20px;
+                  margin-top:  15px;
+                    b
+}
+.folioLeft p{
+    text-indent: inherit;
+      color: #000066;
+        font-size: 14px;
+          margin-right: 10px;
+            margin-top:  10px;
+}
+
+h3{
+  color: silver;
+  text-align: center;
+}
+.folioLeft h3{
+     margin-right: 10px;
+       margin-top: 10px;
+        color: silver;
+
+}  /* Jc2R:  .folioLeft he css rule  of margin-right and margin-top is applying to all the h3 in the whole Dom
+   however the color property is just applying to h3 inside the folioLeft. that's why you needed to create
+   another h3 { } to apply to all those h3 in the lowest level*/
+
+#littHeader {
+    width: 345px;
+      height: 40px;
+        border: 3px solid blue;
+          background-color: #669999;
+}
+
+
+/*Second part of the portFolio*/
+
+
+ #upperPart {
+     width: 790px;
+       height: 700px;
+         border: 5px solid green;
+
+ }
+
+ #upperPart p{
+   font-size: 12px;
+      color: silver;
+
+ }
+
+ #upperPart h3, h5{
+   text-align: left;
+     margin-left: 2px;
+       background-color: #667dc7;
+
+ }
+/*this part cover the la mode, family contacts, and fiveelevent*/
+#leftPic{
+ width:  240px;
+   height: 580px;
+     border: 5px solid green;
+        float: left;
+          margin-left: 7px;
+
+}
+
+
+#centerPic{
+ width:  240px;
+   height: 580px;
+     border: 5px solid green;
+        float:left;
+         margin-left:  15px;
+      }
+
+#rightPic {
+    width: 240px;
+      height: 580px;
+         border: 5px solid green;
+           float: right;
+            margin-right: 4px;
+}
+#pict1, #pict2, #pict3{
+
+  height: 300px;
+}
+
+.techIcon1{
+  width: 234px;
+     height: 155px;
+       border:3px solid purple;
+
+}
+
+.techIcon1 p{
+  text-align: center;
+    background-color: green;
+
+}
+
+.techIcon2 {
+  width:  234px;
+    height: 155px;
+      border: 3px solid purple;
+
+
+}
+.techIcon2 p {
+  text-align: center;
+     background-color: green;
+
+}
+.techIcon3{
+  width: 234px;
+    height: 155px;
+      border: 3px solid purple;
+}
+.techIcon3 p{
+   text-align: center;
+     background-color: green;
+
+
+}
+/*
+.minifoot p{
+  text-align: center;
+     color: white;
+
+}*/
+
+/*This is where the footer begin*/
+
+
+#footer {
+   width: 800px;
+     height: 60px;
+      background-color: silver;
+        text-align: center;
+         margin-top: 10px;
+
+}
+.firstPart p {
+  text-align: center;
+}
+
+.links li{
+
+  display: inline;
+  text-align: center;
+
+}
