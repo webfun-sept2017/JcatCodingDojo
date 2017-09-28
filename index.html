@@ -1,190 +1,84 @@
-
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Gotta Catch'em All</title>
-         <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous"></script>   <!-- This will work with internet connection-->
-    <link rel="stylesheet" href="http://pokeapi.co/api/v2/">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- This will work with internet connection-->
-        <script type="text/javascript" src="jquery-3.2.1.min.js">  </script> <!--This will work with no internet connection-->
+   <head>
+       <title>The Codingdojo ColorClicker!</title>
 
 
-        <script type="text/javascript">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous"></script>   <!-- This will work with internet connection-->
 
-        $(document).ready(function(){
-                       $.get("https://pokeapi.co/api/v1/pokemon/1/", function(res) {
-                           console.log(res);
-                       }, "json");
-                   });
+       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- This will work with internet connection-->
+       <script type="text/javascript" src="jquery-3.2.1.min.js">  </script> <!--This will work with no internet connection-->
 
 
-        </script>
+       <script type="text/javascript">
+          function random_color()
+          {
+             var rgb = ['a','b','c','d','e','f','0','1','2','3','4','5','6','7','8','9'];
+             color = '#'  //this is what we'll return!
+             for(var i = 0; i < 6; i++)
+             {
+                x = Math.floor((Math.random()*16))
+                color += rgb[x];
+             }
+             return color;
+          }
+          $(document).ready(function(){
+             $('#large_box').click(function(){
+               $("#large_box, .side_box, .middle_box").function("random_color")
+                   alert('you clicked the big box!');
 
-    </head>
-    <body>
-        <div id="">
-          <img src="http://pokeapi.co/media/img/123.png">
-<img src="http://pokeapi.co/media/img/1.png">
-<img src="http://pokeapi.co/media/img/2.png">
-<img src="http://pokeapi.co/media/img/3.png">
+         //comment this out when you have figured out what event.stopPropagation is used for
+       });
 
-<img src="http://pokeapi.co/media/img/10.png">
-<img src="http://pokeapi.co/media/img/11.png">
-<img src="http://pokeapi.co/media/img/12.png">
-<img src="http://pokeapi.co/media/img/13.png">
-<img src="http://pokeapi.co/media/img/14png">
-<img src="http://pokeapi.co/media/img/15.png">
-<img src="http://pokeapi.co/media/img/16.png">
-<img src="http://pokeapi.co/media/img/17png">
-<img src="http://pokeapi.co/media/img/18.png">
-<img src="http://pokeapi.co/media/img/19.png">
-<img src="http://pokeapi.co/media/img/20.png">
-<img src="http://pokeapi.co/media/img/21.png">
-<img src="http://pokeapi.co/media/img/22.png">
-<img src="http://pokeapi.co/media/img/23.png">
-<img src="http://pokeapi.co/media/img/24.png">
-<img src="http://pokeapi.co/media/img/25.png">
-<img src="http://pokeapi.co/media/img/26.png">
-<img src="http://pokeapi.co/media/img/27.png">
-<img src="http://pokeapi.co/media/img/28.png">
-<img src="http://pokeapi.co/media/img/29.png">
-<img src="http://pokeapi.co/media/img/30.png">
-<img src="http://pokeapi.co/media/img/31.png">
-<img src="http://pokeapi.co/media/img/32.png">
+             $('.side_box').click(function(event){
+                $(".middle_box, #large_box").function("random_color")
 
-<img src="http://pokeapi.co/media/img/33.png">
-<img src="http://pokeapi.co/media/img/34.png">
-<img src="http://pokeapi.co/media/img/35.png">
-<img src="http://pokeapi.co/media/img/36.png">
-<img src="http://pokeapi.co/media/img/37.png">
-<img src="http://pokeapi.co/media/img/38.png">
-<img src="http://pokeapi.co/media/img/39.png">
-<img src="http://pokeapi.co/media/img/41.png">
-<img src="http://pokeapi.co/media/img/42.png">
-<img src="http://pokeapi.co/media/img/43.png">
-<img src="http://pokeapi.co/media/img/44.png">
-<img src="http://pokeapi.co/media/img/45.png">
-<img src="http://pokeapi.co/media/img/46.png">
-<img src="http://pokeapi.co/media/img/47.png">
-<img src="http://pokeapi.co/media/img/48.png">
-<img src="http://pokeapi.co/media/img/49.png">
-
-<img src="http://pokeapi.co/media/img/50.png">
-<img src="http://pokeapi.co/media/img/51.png">
-<img src="http://pokeapi.co/media/img/52.png">
-<img src="http://pokeapi.co/media/img/53.png">
-<img src="http://pokeapi.co/media/img/54.png">
-<img src="http://pokeapi.co/media/img/55.png">
-<img src="http://pokeapi.co/media/img/56.png">
-<img src="http://pokeapi.co/media/img/57.png">
-<img src="http://pokeapi.co/media/img/58.png">
-<img src="http://pokeapi.co/media/img/59.png">
-
-<img src="http://pokeapi.co/media/img/60.png">
-<img src="http://pokeapi.co/media/img/61.png">
-<img src="http://pokeapi.co/media/img/62.png">
-<img src="http://pokeapi.co/media/img/63.png">
-<img src="http://pokeapi.co/media/img/64.png">
-<img src="http://pokeapi.co/media/img/65.png">
-<img src="http://pokeapi.co/media/img/66.png">
-<img src="http://pokeapi.co/media/img/67.png">
-<img src="http://pokeapi.co/media/img/68.png">
-<img src="http://pokeapi.co/media/img/69.png">
-
-<img src="http://pokeapi.co/media/img/70.png">
-<img src="http://pokeapi.co/media/img/71.png">
-<img src="http://pokeapi.co/media/img/72.png">
-<img src="http://pokeapi.co/media/img/73.png">
-<img src="http://pokeapi.co/media/img/74.png">
-<img src="http://pokeapi.co/media/img/75.png">
-<img src="http://pokeapi.co/media/img/76.png">
-<img src="http://pokeapi.co/media/img/77.png">
-<img src="http://pokeapi.co/media/img/78.png">
-<img src="http://pokeapi.co/media/img/79.png">
-
-<img src="http://pokeapi.co/media/img/80.png">
-<img src="http://pokeapi.co/media/img/81.png">
-<img src="http://pokeapi.co/media/img/82.png">
-<img src="http://pokeapi.co/media/img/83.png">
-<img src="http://pokeapi.co/media/img/84.png">
-<img src="http://pokeapi.co/media/img/85.png">
-<img src="http://pokeapi.co/media/img/86.png">
-<img src="http://pokeapi.co/media/img/87.png">
-<img src="http://pokeapi.co/media/img/88.png">
-<img src="http://pokeapi.co/media/img/89.png">
-
-<img src="http://pokeapi.co/media/img/90.png">
-<img src="http://pokeapi.co/media/img/91.png">
-<img src="http://pokeapi.co/media/img/92.png">
-<img src="http://pokeapi.co/media/img/93.png">
-<img src="http://pokeapi.co/media/img/94.png">
-<img src="http://pokeapi.co/media/img/95.png">
-<img src="http://pokeapi.co/media/img/96.png">
-<img src="http://pokeapi.co/media/img/97.png">
-<img src="http://pokeapi.co/media/img/98.png">
-<img src="http://pokeapi.co/media/img/99.png">
-
-<img src="http://pokeapi.co/media/img/101.png">
-<img src="http://pokeapi.co/media/img/102.png">
-<img src="http://pokeapi.co/media/img/103.png">
-<img src="http://pokeapi.co/media/img/104.png">
-<img src="http://pokeapi.co/media/img/105.png">
-<img src="http://pokeapi.co/media/img/106.png">
-<img src="http://pokeapi.co/media/img/107.png">
-<img src="http://pokeapi.co/media/img/108.png">
-<img src="http://pokeapi.co/media/img/109.png">
-<img src="http://pokeapi.co/media/img/110.png">
-
-<img src="http://pokeapi.co/media/img/111.png">
-<img src="http://pokeapi.co/media/img/112.png">
-<img src="http://pokeapi.co/media/img/113.png">
-<img src="http://pokeapi.co/media/img/114.png">
-<img src="http://pokeapi.co/media/img/115.png">
-<img src="http://pokeapi.co/media/img/116.png">
-<img src="http://pokeapi.co/media/img/118.png">
-<img src="http://pokeapi.co/media/img/119.png">
-<img src="http://pokeapi.co/media/img/117.png">
-
-<img src="http://pokeapi.co/media/img/120.png">
-<img src="http://pokeapi.co/media/img/121.png">
-<img src="http://pokeapi.co/media/img/122.png">
-<img src="http://pokeapi.co/media/img/123.png">
-<img src="http://pokeapi.co/media/img/124.png">
-<img src="http://pokeapi.co/media/img/125.png">
-<img src="http://pokeapi.co/media/img/126.png">
-<img src="http://pokeapi.co/media/img/127.png">
-<img src="http://pokeapi.co/media/img/128.png">
-<img src="http://pokeapi.co/media/img/129.png">
-
-<img src="http://pokeapi.co/media/img/130.png">
-<img src="http://pokeapi.co/media/img/131.png">
-<img src="http://pokeapi.co/media/img/132.png">
-<img src="http://pokeapi.co/media/img/133.png">
-<img src="http://pokeapi.co/media/img/134.png">
-<img src="http://pokeapi.co/media/img/135.png">
-<img src="http://pokeapi.co/media/img/136.png">
-<img src="http://pokeapi.co/media/img/137.png">
-<img src="http://pokeapi.co/media/img/138.png">
-<img src="http://pokeapi.co/media/img/139.png">
-
-<img src="http://pokeapi.co/media/img/140.png">
-<img src="http://pokeapi.co/media/img/141.png">
-<img src="http://pokeapi.co/media/img/142.png">
-<img src="http://pokeapi.co/media/img/143.png">
-<img src="http://pokeapi.co/media/img/144.png">
-<img src="http://pokeapi.co/media/img/145.png">
-<img src="http://pokeapi.co/media/img/146.png">
-<img src="http://pokeapi.co/media/img/147.png">
-<img src="http://pokeapi.co/media/img/148.png">
-<img src="http://pokeapi.co/media/img/149.png">
-
-<img src="http://pokeapi.co/media/img/150.png">
-<img src="http://pokeapi.co/media/img/151.png">
-<img src="http://pokeapi.co/media/img/152.png">
-
-        </div>
-    </body>
+                event.stopPropagation();
+             })
+             $('.middle_box').click(function(event){
+                  $("#large_box, .side_box").on.function("random_color")
+                event.stopPropagation();
+             })
+          });
+      </script>
+      <style type="text/css">
+          *{
+             font-family: sans-serif;
+          }
+          h2, h1, h3 {
+             text-align: center;
+          }
+          #large_box {
+             margin: 0px auto;
+             margin-top: 30px;
+             background-color: lightblue;
+             width: 1200px;
+             height: 300px;
+          }
+          #large_box div {
+             background-color: blue;
+             display: inline-block;
+             width: 350px;
+             height: 130px;
+             margin: 60px 20px;
+          }
+          green{
+            color: green
+          }
+      </style>
+   </head>
+   <body>
+      <h1>The Codingdojo ColorClicker! </h1>
+      <div id='large_box'>
+          <div class='side_box'></div>
+          <div class='middle_box'></div>
+          <div class='side_box'></div>
+      </div>
+      <h2>Rules</h2>
+      <h3>1. Clicking the big box should change background colors of both the small and large boxes!</h3>
+      <h3>2. Clicking the middle small box should change the color of the big box!</h3>
+      <h3>3. Clicking the left or right small box should change the color of that box's siblings</h3>
+   </body>
 </html>
+Copy
